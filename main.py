@@ -11,7 +11,7 @@ class Auto:
   def cantidadAsientos(self):
     cantidadAsientos = 0
     for asiento in self.asientos:
-      if(type(asiento) == Asiento):
+      if(type(asiento) == type(Asiento)):
         cantidadAsientos += 1
 
   
