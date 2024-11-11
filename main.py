@@ -11,7 +11,7 @@ class Auto:
   def cantidadAsientos(self):
     cantidadAsientos = 0
     for asiento in self.asientos:
-      if(type(asiento) == type(Asiento)):
+      if isinstance(asiento, Asiento):
         cantidadAsientos += 1
 
   
@@ -20,10 +20,10 @@ class Auto:
       return "Las piezas no son originales"
 
     for asiento in self.asientos:
-      if(asiento.self.registro != self.registro):
+      if(asiento.registro != self.registro):
         return("Las piezas no son originales")
-      else:
-        return("Auto original")
+      
+    return("Auto original")
 
 class Asiento:
   def __init__(self,color,precio,registro):
