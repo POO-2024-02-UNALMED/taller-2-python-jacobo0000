@@ -20,7 +20,7 @@ class Auto:
       return "Las piezas no son originales"
 
     for asiento in self.asientos:
-      if(asiento.registro != self.registro):
+      if(asiento.self.registro != self.registro):
         return("Las piezas no son originales")
       else:
         return("Auto original")
@@ -49,3 +49,5 @@ class Motor:
     tipos = ["gasolina", "electrico"]
     if(tipoNuevo in tipos):
       self.tipo = tipoNuevo 
+
+
