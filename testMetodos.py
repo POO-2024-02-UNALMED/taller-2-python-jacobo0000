@@ -59,8 +59,7 @@ def testMetodoVerificarIntegridad():
 
     ok = False
 		
-    if(a1.verificarIntegridad() == "Auto original" and 
-            a2.verificarIntegridad() == "Las piezas no son originales"):
+    if(a1.verificarIntegridad() == "Auto original" and a2.verificarIntegridad() == "Las piezas no son originales"):
         ok = True
 
     assert(ok)
